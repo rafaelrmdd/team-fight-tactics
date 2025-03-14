@@ -2,7 +2,7 @@ namespace backend.Models;
 
 public class Piece
 {
-    public Guid Id { get; set; }
+    public Guid Id { get; set; } = Guid.NewGuid();
     public string Name { get; set; }
     public string Role { get; set; }
     public decimal Price { get; set; }
